@@ -6,6 +6,20 @@
   box-sizing: border-box;
 }
 
+  /* custom variable */
+  :root {
+    /* text gradients */
+    --color-start: rgba(6,210,13,1);
+    --color-end: rgba(4,167,100,1);
+    --gradient-direction: 90deg;
+    --gradient-start: 0%;
+    --gradient-end: 50%;
+    /* latest stories text color */
+    --latest-stories-color: #777777;
+    /* menu items color */
+    --menu-items-color: #7F7F7F;
+  }
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -129,7 +143,7 @@ body {
 }
 
 .navbar .menu-items li a {
-  color: #7F7F7F;
+  color: var(--menu-items-color);
 }
 
 .navbar .menu-items #join-btn {
@@ -198,7 +212,7 @@ body {
 }
 
 .checkbox-field-label {
-  color: #7F7F7F;
+  color: var(--menu-items-color);
 }
 
 @media (min-width: 768px) {
@@ -253,26 +267,26 @@ body {
 
   /* gradient on Load More */
   #load-more a {
-    /* fallback */
-    color: rgb(6,210,13);
+  /* fallback */
+  color: var(--color-start);
 
-    /* gradient */
-    background-color: rgb(6,210,13);
-    background-image: linear-gradient(90deg, rgba(6,210,13,1) 0%, rgba(4,167,100,1) 50%);
-    background-size: 100%;
-    background-repeat: repeat;
+  /* gradient */
+  background-color: var(--color-start);
+  background-image: linear-gradient(var(--gradient-direction), var(--color-start) var(--gradient-start), var(--color-end) var(--gradient-end));
+  background-size: 100%;
+  background-repeat: repeat;
 
-    /* text as mask */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+  /* text as mask */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   }
 
   .latest-news #latest-news-brief,
   .latest-news time {
-    color: #777777;
+    color: var(--latest-stories-color);
   }
 
   a:visited {
@@ -300,21 +314,21 @@ body {
 
   /* gradient on news category links */
   .news-category a {
-    /* fallback */
-    color: rgb(6,210,13);
+  /* fallback */
+  color: var(--color-start);
 
-    /* gradient */
-    background-color: rgb(6,210,13);
-    background-image: linear-gradient(90deg, rgba(6,210,13,1) 0%, rgba(4,167,100,1) 50%);
-    background-size: 100%;
-    background-repeat: repeat;
+  /* gradient */
+  background-color: var(--color-start);
+  background-image: linear-gradient(var(--gradient-direction), var(--color-start) var(--gradient-start), var(--color-end) var(--gradient-end));
+  background-size: 100%;
+  background-repeat: repeat;
 
-    /* text as mask */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+  /* text as mask */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   }
 
   .news-rep-name,
