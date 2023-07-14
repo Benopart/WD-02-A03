@@ -20,7 +20,7 @@
         <img src="images/TechCrunch.png" alt="Website Logo" />
       </div>
       <!--End of logo section-->
-      <ul class="container nav-container">
+      <div class="container nav-container">
         <!--Burger menu checkbox-->
         <input
           class="checkbox"
@@ -58,11 +58,11 @@
             <!-- End of navigation links -->
           </ul>
         </nav>
-      </ul>
+      </div>
     </nav>
     <!--End of navigation bar-->
     <!--Top news section, one main on left and 4 verticaly stacked on right-->
-    <section id="top-news">
+    <div id="top-news">
       <!--Main news header-->
       <section>
         <h2 id="main-top-news">
@@ -74,21 +74,21 @@
         <p id="rep-name"><a href="#">Taylor Hatmaker</a></p>
       </section>
       <!--Main news picture-->
-      <section id="main-rep-img">
+      <div id="main-rep-img">
         <a href="#">
           <figure>
             <img
-              src="https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1507057889-e1688662829922.jpg?w=320&amp;h=347&amp;crop=1 320w"
+              src="https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1507057889-e1688662829922.jpg?w=320&amp;h=347&amp;crop=1"
               alt="Logo of Threads is displayed on a mobile phone screen in front of a screen"
               srcset="
                 https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1507057889-e1688662829922.jpg?w=320&amp;h=347&amp;crop=1 320w,
                 https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1507057889-e1688662829922.jpg?w=850&amp;h=492&amp;crop=1 850w
               "
-              sizes="(max-width: 1000px) calc(100vw-60px) 320px, 850px"
+              sizes="(max-width: 1000px) calc(100vw-60px), 850px"
             />
           </figure>
         </a>
-      </section>
+      </div>
       <!--End of main news picture-->
       <!--Four news headline on right side of main news-->
       <!-- <section id="side-main-news"> -->
@@ -143,15 +143,17 @@
         <h3 class="news-title">
           <a href="#">OpenAI makes GPT-4 generally available</a>
         </h3>
-        <p class="news-rep-name"><a href="#">Kyle Wiggers</a></p>
+        <p class="news-rep-name" id="last-side-news">
+          <a href="#">Kyle Wiggers</a>
+        </p>
       </section>
       <!-- </section> -->
       <!--End of four headlines on right side of main news-->
-    </section>
+    </div>
     <!--End of the group of main news and four headlines-->
-    <!----------------------------------------------------->
+
     <!--The latest news section-->
-    <section id="the-latest">
+    <div id="the-latest">
       <div id="content">
         <article class="latest-news">
           <h2>The Latest</h2>
@@ -179,7 +181,7 @@
             </div>
           </header>
           <!--Brief explanation of the news-->
-          <section id="latest-news-brief" class="flex-item">
+          <section id="latest-news-brief-01" class="flex-item">
             <h4>
               In the latest sign that Meta’s new Twitter lookalike Threads is
               unlikely to capture the essence of its predecessor, the company is
@@ -187,7 +189,7 @@
             </h4>
           </section>
           <!--The picture of news-->
-          <section class="news-pic flex-item">
+          <div class="news-pic flex-item">
             <figure>
               <picture>
                 <source
@@ -196,7 +198,7 @@
                     https://techcrunch.com/wp-content/uploads/2023/07/threads-twitter-logos.jpg?w=200&amp;h=107&amp;crop=1 200w,
                     https://techcrunch.com/wp-content/uploads/2023/07/threads-twitter-logos.jpg?w=430&amp;h=230&amp;crop=1 430w
                   "
-                  sizes="(max-width: 850px) calc(100vw-40px) 600px, 850px"
+                  sizes="(max-width: 850px) calc(100vw-40px),850px"
                   media="(max-width: 380px)"
                 />
 
@@ -212,7 +214,7 @@
                 />
               </picture>
             </figure>
-          </section>
+          </div>
         </article>
         <!--The second latest news-->
         <article class="latest-news">
@@ -234,7 +236,7 @@
               </time>
             </div>
           </header>
-          <section id="latest-news-brief" class="flex-item">
+          <section id="latest-news-brief-02" class="flex-item">
             <h4>
               You enjoyed his iMacs, his iPhones, his iPads. You thrilled at the
               way he said “aluminium” [sic]. You admired the typeface. Are you
@@ -243,7 +245,7 @@
             </h4>
           </section>
 
-          <section class="news-pic flex-item">
+          <div class="news-pic flex-item">
             <figure>
               <picture>
                 <source
@@ -252,7 +254,7 @@
                     https://techcrunch.com/wp-content/uploads/2023/07/LP12-50_Badge-Focus.jpg?w=200&amp;h=107&amp;crop=1 200w,
                     https://techcrunch.com/wp-content/uploads/2023/07/LP12-50_Badge-Focus.jpg?w=430&amp;h=230&amp;crop=1 430w
                   "
-                  sizes="(max-width: 850px) calc(100vw-40px) 600px, 850px"
+                  sizes="(max-width: 850px) calc(100vw-40px),850px"
                   media="(max-width: 380px)"
                 />
 
@@ -268,7 +270,7 @@
                 />
               </picture>
             </figure>
-          </section>
+          </div>
         </article>
         <!--3rd latest news-->
         <article class="latest-news">
@@ -290,14 +292,14 @@
               </time>
             </div>
           </header>
-          <section id="latest-news-brief" class="flex-item">
+          <section id="latest-news-brief-03" class="flex-item">
             <h4>
               Why aren’t there more robots in homes? This a surprising complex
               question — and our homes are surprisingly complex places. A big
               part of the reason autonomous systems are thriving on warehous...
             </h4>
           </section>
-          <section class="news-pic flex-item">
+          <div class="news-pic flex-item">
             <figure>
               <picture>
                 <source
@@ -306,7 +308,7 @@
                     https://techcrunch.com/wp-content/uploads/2023/07/PIGInet2.jpg?w=200&amp;h=107&amp;crop=1 200w,
                     https://techcrunch.com/wp-content/uploads/2023/07/PIGInet2.jpg?w=430&amp;h=230&amp;crop=1 430w
                   "
-                  sizes="(max-width: 850px) calc(100vw-40px) 600px, 850px"
+                  sizes="(max-width: 850px) calc(100vw-40px),850px"
                   media="(max-width: 380px)"
                 />
 
@@ -322,14 +324,14 @@
                 />
               </picture>
             </figure>
-          </section>
+          </div>
         </article>
         <!--End of 3rd latest news-->
         <!--The link for loading more latest news-->
-        <article class="latest-news"><a>Load More</a></article>
+        <div class="latest-news"><a id="load-more-link">Load More</a></div>
       </div>
       <!--End of the content-->
-    </section>
+    </div>
     <!--End of the latest news section-->
     <!--Sign up for newsletters section/considered as an item belongs to latest news section-->
     <article class="latest-news">
@@ -340,7 +342,7 @@
         </p>
       </header>
       <!--Check boxes options-->
-      <section class="newsletter-form">
+      <div class="newsletter-form">
         <ul>
           <li class="form-field">
             <input
@@ -373,7 +375,7 @@
             /><label
               class="checkbox-field-label"
               for="checkbox-Readership-startups"
-              >Startups Weekly</label
+              >Startups Weekly (Special Offer)</label
             >
           </li>
           <li class="form-field">
@@ -401,17 +403,15 @@
             >
           </li>
         </ul>
-      </section>
+      </div>
       <!--Email address input and submit button-->
-      <section>
+      <div>
         <fieldset class="form-field-email">
-          <input class="form-field-input" name="email" type="email" /><label
-            class="form-field-label"
-            >Email</label
-          >
+          <label class="form-field-label">Email</label>
+          <input class="form-field-input" name="email" type="email" />
+          <button class="button-primary" disabled="">Subscribe</button>
         </fieldset>
-        <button class="button-primary" disabled="">Subscribe</button>
-      </section>
+      </div>
     </article>
     <!--End of the newsletter section-->
     <!--Page footer section-->
