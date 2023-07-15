@@ -241,7 +241,11 @@ img {
   height: 1.5rem;
 }
 /*child selector*/
-div > a:not(#load-more-link) {
+div > a:not(#load-more-link):not(#join-btn):not(#login-btn) {
+  color: var(--color-start);
+}
+#join-btn,
+#login-btn {
   color: var(--menu-items-color);
 }
 /*Adjacent Sibling Selector*/
