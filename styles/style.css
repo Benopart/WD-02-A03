@@ -341,6 +341,11 @@ p + time {
     margin-top: 8rem;
   }
 
+  #join-btn,
+  #login-btn {
+    color: var(--color-start);
+  }
+
   #main-rep-img img {
     height: 400px;
     width: 600px;
